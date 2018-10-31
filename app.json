@@ -7,13 +7,11 @@
     "pages/my/my"
   ],
   "window": {
-    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#d4237a",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "white",
     "backgroundColor": "#ffffff",
-    "onReachBottomDistance": 50,
-    "enablePullDownRefresh": true
+    "onReachBottomDistance": 50
   },
   "tabBar": {
     "color": "#8a8a8a",
@@ -27,7 +25,7 @@
       },
       {
         "pagePath": "pages/service/service",
-        "text": "服务",
+        "text": "精选",
         "iconPath": "images/tab/service.png",
         "selectedIconPath": "images/tab/service@active.png"
       },

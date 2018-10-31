@@ -1,13 +1,114 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<view class="search-container">
+  <view class="search">
+    <image class="search-icon" src="../../images/icon/search.png" />
+    <text class="search-placeholder">精选商品</text>
   </view>
 </view>
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="300">
+  <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+    <view class="swiper-item">
+      <image src="{{item}}" class="slide-image" mode="aspectFill" />
+    </view>
+  </swiper-item>
+</swiper>
+
+<view class="section">
+  <view class="section-header font-nowrap">
+    热销排行（按照销售量的排行，只列出前十）
+  </view>
+  <scroll-view class="section-body" scroll-x="true">
+    <view class="ranking">
+        <view class="ranking-item">1---</view>
+        <view class="ranking-item">2---</view>
+        <view class="ranking-item">3---</view>
+        <view class="ranking-item">4---</view>
+        <view class="ranking-item">5---</view>
+        <view class="ranking-item">6---</view>
+        <view class="ranking-item">7---</view>
+        <view class="ranking-item">8---</view>
+        <view class="ranking-item">9---</view>
+        <view class="ranking-item">10---</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="section">
+  <view class="section-header font-nowrap">
+      折扣优惠（折扣，团购，折扣券，代金券）、有列表。购买商品之后可以领取优惠券
+  </view>
+  <scroll-view class="section-body" scroll-x="true">
+    <view class="ranking">
+        <view class="ranking-item">1---</view>
+        <view class="ranking-item">2---</view>
+        <view class="ranking-item">3---</view>
+        <view class="ranking-item">4---</view>
+        <view class="ranking-item">5---</view>
+        <view class="ranking-item">6---</view>
+        <view class="ranking-item">7---</view>
+        <view class="ranking-item">8---</view>
+        <view class="ranking-item">9---</view>
+        <view class="ranking-item">10---</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="section">
+  <view class="section-header font-nowrap">
+      特色推荐（具有特色的商品，九宫格？轮播图？）
+  </view>
+  <scroll-view class="section-body" scroll-x="true">
+    <view class="ranking">
+        <view class="ranking-item">1---</view>
+        <view class="ranking-item">2---</view>
+        <view class="ranking-item">3---</view>
+        <view class="ranking-item">4---</view>
+        <view class="ranking-item">5---</view>
+        <view class="ranking-item">6---</view>
+        <view class="ranking-item">7---</view>
+        <view class="ranking-item">8---</view>
+        <view class="ranking-item">9---</view>
+        <view class="ranking-item">10---</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="section">
+  <view class="section-header font-nowrap">
+      猜你喜欢（浏览过的商品，可能没有，横向滚动）
+  </view>
+  <scroll-view class="section-body" scroll-x="true">
+    <view class="ranking">
+        <view class="ranking-item">1---</view>
+        <view class="ranking-item">2---</view>
+        <view class="ranking-item">3---</view>
+        <view class="ranking-item">4---</view>
+        <view class="ranking-item">5---</view>
+        <view class="ranking-item">6---</view>
+        <view class="ranking-item">7---</view>
+        <view class="ranking-item">8---</view>
+        <view class="ranking-item">9---</view>
+        <view class="ranking-item">10---</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="section">
+  <view class="section-header font-nowrap">
+      精选推荐（放最后，上拉加载更多）
+  </view>
+  <scroll-view class="section-body" scroll-x="true">
+    <view class="ranking">
+        <view class="ranking-item">1---</view>
+        <view class="ranking-item">2---</view>
+        <view class="ranking-item">3---</view>
+        <view class="ranking-item">4---</view>
+        <view class="ranking-item">5---</view>
+        <view class="ranking-item">6---</view>
+        <view class="ranking-item">7---</view>
+        <view class="ranking-item">8---</view>
+        <view class="ranking-item">9---</view>
+        <view class="ranking-item">10---</view>
+    </view>
+  </scroll-view>
+</view>
+

@@ -1,21 +1,73 @@
-/**index.wxss**/
-.userinfo {
+/* 搜索 */
+.search-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.search {
+  height: 56rpx;
+  border-radius: 56rpx;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  padding-left: 20rpx;
+  background-color: #eee;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.search-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 8rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.search-placeholder {
+  font-size: 28rpx;
+  color: #bfbfbf;
 }
 
-.usermotto {
-  margin-top: 200px;
+/* swiper */
+swiper {
+  height: 320rxp;
+  margin-top: 100rpx;
+}
+.swiper-item {
+  padding: 0 30rpx;
+  height: 300rpx;
+}
+.slide-image {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+/* section */
+.section {
+  margin-top: 30rpx;
+}
+.section-header {
+  border-top: 1rpx solid #ccc;
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.ranking {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+}
+.ranking-item {
+  width: 40%;
+  flex-shrink: 0;
+  height: 200rpx;
+  border: 1rpx solid #ddd;
 }
