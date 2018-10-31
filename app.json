@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/category/category",
+    "pages/service/service",
     "pages/message/message",
     "pages/cart/cart",
     "pages/my/my"
@@ -22,32 +22,32 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "images/icon/index.png",
-        "selectedIconPath": "images/icon/index-active.png"
+        "iconPath": "images/tab/index.png",
+        "selectedIconPath": "images/tab/index@active.png"
       },
       {
-        "pagePath": "pages/category/category",
-        "text": "分类",
-        "iconPath": "images/icon/category.png",
-        "selectedIconPath": "images/icon/category-active.png"
+        "pagePath": "pages/service/service",
+        "text": "服务",
+        "iconPath": "images/tab/service.png",
+        "selectedIconPath": "images/tab/service@active.png"
       },
       {
         "pagePath": "pages/message/message",
         "text": "消息",
-        "iconPath": "images/icon/message.png",
-        "selectedIconPath": "images/icon/message-active.png"
+        "iconPath": "images/tab/message.png",
+        "selectedIconPath": "images/tab/message@active.png"
       },
       {
         "pagePath": "pages/cart/cart",
         "text": "购物车",
-        "iconPath": "images/icon/cart.png",
-        "selectedIconPath": "images/icon/cart-active.png"
+        "iconPath": "images/tab/cart.png",
+        "selectedIconPath": "images/tab/cart@active.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "images/icon/my.png",
-        "selectedIconPath": "images/icon/my-active.png"
+        "iconPath": "images/tab/my.png",
+        "selectedIconPath": "images/tab/my@active.png"
       }
     ]
   }
