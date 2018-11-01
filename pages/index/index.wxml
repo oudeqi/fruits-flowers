@@ -1,21 +1,101 @@
+<!-- 搜索 -->
 <view class="search-container">
   <view class="search">
     <image class="search-icon" src="../../images/icon/search.png" />
     <text class="search-placeholder">精选商品</text>
   </view>
 </view>
-<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="300">
-  <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
-    <view class="swiper-item">
-      <image src="{{item}}" class="slide-image" mode="aspectFill" />
-    </view>
-  </swiper-item>
-</swiper>
 
+<!-- 轮播图 -->
+<view class="top-banner">
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" indicator-color="rgba(0, 0, 0, .2)" indicator-active-color="#f3f3f3"
+    interval="5000" duration="300">
+    <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+      <view class="banner-item">
+        <image src="{{item}}" class="banner-image" mode="aspectFill" />
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- （具有特色的商品，九宫格？轮播图？） -->
 <view class="section">
   <view class="section-header font-nowrap">
-    热销排行（按照销售量的排行，只列出前十）
+    <view class="section-title">精选商品</view>
+    <view class="section-more">发现更多</view>
   </view>
+  <view class="grid-container">
+    <view class="grid-item">1</view>
+    <view class="grid-item">2</view>
+    <view class="grid-item">3</view>
+    <view class="grid-item">4</view>
+    <view class="grid-item">5</view>
+    <view class="grid-item">6</view>
+    <view class="grid-item">7</view>
+    <view class="grid-item">8</view>
+    <view class="grid-item">9</view>
+  </view>
+</view>
+
+<!-- （折扣，团购，折扣券，代金券）、有列表。购买商品之后可以领取优惠券 -->
+<!-- 商家活动、累积粉丝、大折扣 -->
+<view class="section">
+    <view class="section-header font-nowrap">
+        <view class="section-title">折扣优惠</view>
+        <view class="section-more">发现更多</view>
+    </view>
+    <view class="discount-banner">
+      <swiper indicator-dots="{{true}}" autoplay="{{true}}" indicator-color="rgba(0, 0, 0, .2)" indicator-active-color="#f3f3f3"
+        interval="5000" duration="300" next-margin="100rpx">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+          <view class="discount-item">
+            <image src="{{item}}" class="discount-image" mode="aspectFill" />
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+
+<!-- 按照销售量的排行，只列出前十 -->
+<view class="section">
+  <view class="section-header font-nowrap">热销排行</view>
+  <scroll-view scroll-x="true">
+    <view class="scroll-container">
+      <view class="scroll-item">1</view>
+      <view class="scroll-item">2</view>
+      <view class="scroll-item">3</view>
+      <view class="scroll-item">4</view>
+      <view class="scroll-item">5</view>
+      <view class="scroll-item">6</view>
+      <view class="scroll-item">7</view>
+      <view class="scroll-item">8</view>
+      <view class="scroll-item">9</view>
+      <view class="scroll-item">10</view>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- （放最后，上拉加载更多） -->
+<view class="section">
+  <view class="section-header font-nowrap">精选推荐</view>
+  <view class="list-container">
+    <view class="item">1---</view>
+    <view class="item">2---</view>
+    <view class="item">3---</view>
+    <view class="item">4---</view>
+    <view class="item">5---</view>
+    <view class="item">6---</view>
+    <view class="item">7---</view>
+    <view class="item">8---</view>
+    <view class="item">9---</view>
+    <view class="item">10---</view>
+  </view>
+  <view class="loading">加载中...</view>
+</view>
+
+<!-- （浏览过的商品，可能没有，横向滚动） -->
+<!-- <view class="section">
+  <view class="section-header font-nowrap">猜你喜欢</view>
   <scroll-view class="section-body" scroll-x="true">
     <view class="ranking">
         <view class="ranking-item">1---</view>
@@ -30,85 +110,4 @@
         <view class="ranking-item">10---</view>
     </view>
   </scroll-view>
-</view>
-
-<view class="section">
-  <view class="section-header font-nowrap">
-      折扣优惠（折扣，团购，折扣券，代金券）、有列表。购买商品之后可以领取优惠券
-  </view>
-  <scroll-view class="section-body" scroll-x="true">
-    <view class="ranking">
-        <view class="ranking-item">1---</view>
-        <view class="ranking-item">2---</view>
-        <view class="ranking-item">3---</view>
-        <view class="ranking-item">4---</view>
-        <view class="ranking-item">5---</view>
-        <view class="ranking-item">6---</view>
-        <view class="ranking-item">7---</view>
-        <view class="ranking-item">8---</view>
-        <view class="ranking-item">9---</view>
-        <view class="ranking-item">10---</view>
-    </view>
-  </scroll-view>
-</view>
-
-<view class="section">
-  <view class="section-header font-nowrap">
-      特色推荐（具有特色的商品，九宫格？轮播图？）
-  </view>
-  <scroll-view class="section-body" scroll-x="true">
-    <view class="ranking">
-        <view class="ranking-item">1---</view>
-        <view class="ranking-item">2---</view>
-        <view class="ranking-item">3---</view>
-        <view class="ranking-item">4---</view>
-        <view class="ranking-item">5---</view>
-        <view class="ranking-item">6---</view>
-        <view class="ranking-item">7---</view>
-        <view class="ranking-item">8---</view>
-        <view class="ranking-item">9---</view>
-        <view class="ranking-item">10---</view>
-    </view>
-  </scroll-view>
-</view>
-
-<view class="section">
-  <view class="section-header font-nowrap">
-      猜你喜欢（浏览过的商品，可能没有，横向滚动）
-  </view>
-  <scroll-view class="section-body" scroll-x="true">
-    <view class="ranking">
-        <view class="ranking-item">1---</view>
-        <view class="ranking-item">2---</view>
-        <view class="ranking-item">3---</view>
-        <view class="ranking-item">4---</view>
-        <view class="ranking-item">5---</view>
-        <view class="ranking-item">6---</view>
-        <view class="ranking-item">7---</view>
-        <view class="ranking-item">8---</view>
-        <view class="ranking-item">9---</view>
-        <view class="ranking-item">10---</view>
-    </view>
-  </scroll-view>
-</view>
-
-<view class="section">
-  <view class="section-header font-nowrap">
-      精选推荐（放最后，上拉加载更多）
-  </view>
-  <scroll-view class="section-body" scroll-x="true">
-    <view class="ranking">
-        <view class="ranking-item">1---</view>
-        <view class="ranking-item">2---</view>
-        <view class="ranking-item">3---</view>
-        <view class="ranking-item">4---</view>
-        <view class="ranking-item">5---</view>
-        <view class="ranking-item">6---</view>
-        <view class="ranking-item">7---</view>
-        <view class="ranking-item">8---</view>
-        <view class="ranking-item">9---</view>
-        <view class="ranking-item">10---</view>
-    </view>
-  </scroll-view>
-</view>
-
+</view> -->
