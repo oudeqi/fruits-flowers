@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/service/service",
+    "pages/category/category",
     "pages/message/message",
     "pages/cart/cart",
     "pages/my/my"
@@ -24,10 +24,10 @@
         "selectedIconPath": "images/tab/index@active.png"
       },
       {
-        "pagePath": "pages/service/service",
+        "pagePath": "pages/category/category",
         "text": "精选",
-        "iconPath": "images/tab/service.png",
-        "selectedIconPath": "images/tab/service@active.png"
+        "iconPath": "images/tab/category.png",
+        "selectedIconPath": "images/tab/category@active.png"
       },
       {
         "pagePath": "pages/message/message",

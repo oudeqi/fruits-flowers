@@ -8,13 +8,20 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-
     imgUrls: [
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'
-    ]
+    ],
+    searchBarAlpha: 'rgba(255, 255, 255, .3)'
+  },
+  onPageScroll: function ({scrollTop}) {
+    if (scrollTop < 30) scrollTop = 30
+    if (scrollTop > 100) scrollTop = 100
+    this.setData({
+      searchBarAlpha: `rgba(255, 255, 255, ${scrollTop / 100})`
+    })
   },
   //事件处理函数
   bindViewTap: function() {
@@ -22,7 +29,7 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad () {
     // if (app.globalData.userInfo) {
     //   this.setData({
     //     userInfo: app.globalData.userInfo,

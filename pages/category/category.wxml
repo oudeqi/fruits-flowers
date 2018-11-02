@@ -1,0 +1,26 @@
+<view class="container">
+
+  <scroll-view scroll-y="true" enable-back-to-top="true" class="left-container">
+    <view class="category-container">
+      <view bindtap="handleCategoryItemTap" data-id="{{item.id}}" wx:for="{{category}}" wx:key="index" class="category-item {{item.active?'active':''}}">{{item.name}}</view>
+    </view>
+  </scroll-view>
+
+  <scroll-view scroll-y="true" bindscrolltoupper="handleScrollToUpper" bindscrolltolower="handleScrollToLower" enable-back-to-top="true" class="right-container">
+    <view class="scroll-container">
+      <view class="scroll-item">1</view>
+      <view class="scroll-item">2</view>
+      <view class="scroll-item">3</view>
+      <view class="scroll-item">4</view>
+      <view class="scroll-item">5</view>
+      <view class="scroll-item">6</view>
+      <view class="scroll-item">1</view>
+      <view class="scroll-item">2</view>
+      <view class="scroll-item">3</view>
+      <view class="scroll-item">4</view>
+      <view class="scroll-item">5</view>
+      <view class="scroll-item">6</view>
+    </view>
+    <view class="loading">加载中...</view>
+  </scroll-view>
+</view>
