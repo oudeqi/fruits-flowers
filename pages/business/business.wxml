@@ -1,0 +1,54 @@
+<view class="list-container">
+  <view class="item">
+    <view class="left">
+      <image mode="aspectFill" src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" />
+    </view>
+    <view class="right">
+      <view class="row-1">
+        <text class="name">百果园水果店</text>
+        <text class="collect">收藏</text>
+      </view>
+      <view class="distance">距离50米</view>
+      <view class="address">观东三街404号</view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="left">
+      <image mode="aspectFill" src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" />
+    </view>
+    <view class="right">
+      <view class="row-1">
+        <text class="name">百果园水果店</text>
+        <text class="collect">收藏</text>
+      </view>
+      <view class="distance">距离50米</view>
+      <view class="address">观东三街404号</view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="left">
+      <image mode="aspectFill" src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" />
+    </view>
+    <view class="right">
+      <view class="row-1">
+        <text class="name">百果园水果店</text>
+        <text class="collect">收藏</text>
+      </view>
+      <view class="distance">距离50米</view>
+      <view class="address">观东三街404号</view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="left">
+      <image mode="aspectFill" src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" />
+    </view>
+    <view class="right">
+      <view class="row-1">
+        <text class="name">百果园水果店</text>
+        <text class="collect">收藏</text>
+      </view>
+      <view class="distance">距离50米</view>
+      <view class="address">观东三街404号</view>
+    </view>
+  </view>
+</view>

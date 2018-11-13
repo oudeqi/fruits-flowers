@@ -1,2 +1,163 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view class="search-container" style="background-color: {{searchBarAlpha}};">
+  <view class="search">
+    <image class="search-icon" src="../../images/icon/search.png" />
+    <text class="search-placeholder">精品推荐</text>
+  </view>
+</view>
+<swiper class="top-banner" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" indicator-color="rgba(0, 0, 0, .2)"
+  indicator-active-color="#f3f3f3" interval="3000" duration="300">
+  <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+    <view class="top-banner-item">
+      <image src="{{item}}" class="banner-image" mode="aspectFill" />
+    </view>
+  </swiper-item>
+</swiper>
+
+<view class="nav">
+  <view class="nav-item nav-large">鲜花</view>
+  <view class="nav-small-container">
+    <view class="nav-item nav-small">水果</view>
+    <view class="nav-item nav-small">下午茶</view>
+    <view class="nav-item nav-small">服务</view>
+    <view class="nav-item nav-small">特殊</view>
+  </view>
+</view>
+
+
+
+<!-- 精选推荐 -->
+<view class="section">
+  <view class="section-header font-nowrap">
+    <view class="section-title">精选推荐</view>
+  </view>
+  <view class="grid-container">
+    <view class="col-3">1</view>
+    <view class="col-3">2</view>
+    <view class="col-3">3</view>
+    <view class="col-3">4</view>
+    <view class="col-3">5</view>
+    <view class="col-3">6</view>
+  </view>
+</view>
+
+
+<!-- 热门推荐 -->
+<!-- <view class="section">
+  <view class="section-header font-nowrap">
+    <view class="section-title">热门推荐</view>
+  </view>
+  <view class="multiple-items-banner">
+    <swiper autoplay="{{true}}" circular="{{true}}" 
+      interval="5000" duration="300" display-multiple-items="3">
+      <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+        <view class="multiple-banner-item">
+          <image src="{{item}}" class="banner-image" mode="aspectFill" />
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view> -->
+<view class="section">
+  <view class="section-header font-nowrap">
+    <view class="section-title">热门推荐</view>
+  </view>
+  <scroll-view scroll-x="true">
+    <view class="scroll-container">
+      <view class="scroll-item">1</view>
+      <view class="scroll-item">2</view>
+      <view class="scroll-item">3</view>
+      <view class="scroll-item">4</view>
+    </view>
+  </scroll-view>
+</view>
+
+
+<!-- 精选推荐 -->
+<!-- <view class="section">
+  <view class="section-header font-nowrap">
+    <view class="section-title">精选推荐</view>
+  </view>
+  <view class="grid-container">
+    <view class="col-2">1</view>
+    <view class="col-2">2</view>
+    <view class="col-2">3</view>
+    <view class="col-2">4</view>
+  </view>
+</view> -->
+
+<!-- 鲜花专题 -->
+<view class="section">
+  <view class="section-header font-nowrap">
+    <view class="section-title">鲜花专题</view>
+    <view class="section-more">更多</view>
+  </view>
+  <view class="flower-container">
+    <view class="flower-left">鲜花</view>
+    <view class="flower-right">
+      <view class="flower-item">鲜花</view>
+      <view class="flower-item">鲜花</view>
+    </view>
+  </view>
+</view>
+
+
+<!-- 水果专题 -->
+<view class="section">
+  <view class="section-header font-nowrap">
+    <view class="section-title">水果专题</view>
+    <view class="section-more">更多</view>
+  </view>
+  <view class="flower-container">
+    <view class="flower-left">鲜花</view>
+    <view class="flower-right">
+      <view class="flower-item">鲜花</view>
+      <view class="flower-item">鲜花</view>
+    </view>
+  </view>
+</view>
+
+<!-- 下午茶专题 -->
+<view class="section" style="padding-bottom: 30rpx;">
+  <view class="section-header font-nowrap">
+    <view class="section-title">下午茶专题</view>
+    <view class="section-more">更多</view>
+  </view>
+  <view class="flower-container">
+    <view class="flower-left">鲜花</view>
+    <view class="flower-right">
+      <view class="flower-item">鲜花</view>
+      <view class="flower-item">鲜花</view>
+    </view>
+  </view>
+</view>
+<!-- 定制服务 -->
+<view class="section" style="padding-bottom: 30rpx;">
+  <view class="section-header font-nowrap">
+    <view class="section-title">定制服务</view>
+    <view class="section-more">更多</view>
+  </view>
+  <view class="flower-container">
+    <view class="flower-left">鲜花</view>
+    <view class="flower-right">
+      <view class="flower-item">鲜花</view>
+      <view class="flower-item">鲜花</view>
+    </view>
+  </view>
+</view>
+<!-- 特殊专题 -->
+<view class="section" style="padding-bottom: 30rpx;">
+  <view class="section-header font-nowrap">
+    <view class="section-title">特殊专题</view>
+    <view class="section-more">更多</view>
+  </view>
+  <view class="flower-container">
+    <view class="flower-left">鲜花</view>
+    <view class="flower-right">
+      <view class="flower-item">鲜花</view>
+      <view class="flower-item">鲜花</view>
+    </view>
+  </view>
+</view>
+
+
+
